@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  db:
+    image: mysql/mysql-server:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: real_good_password
+      MYSQL_DATABASE: backend
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - backendDatabaseStore:/var/lib/mysql
+    ports:
+      - "33060:3306"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: another_good_password
+    ports:
+      - "8080:80"
+  backend:
+    image: chess_backend:latest
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DB_USER: root
+      DB_PASS: real_good_password
+      DB_PORT: 3306
+      DB_HOST: db
+      DB_SCHEMA: backend
+    ports:
+      - "8081:80"
+volumes:
+  backendDatabaseStore:

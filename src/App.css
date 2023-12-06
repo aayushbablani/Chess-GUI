@@ -1,0 +1,44 @@
+/* Overall styling for the app */
+.App {
+  text-align: center; /* Aligns text to the center */
+}
+
+/* Styling for the app logo */
+.App-logo {
+  height: 40vmin; /* Sets the height of the logo relative to the viewport's minimum axis */
+  pointer-events: none; /* Prevents the logo from being the target of mouse events */
+}
+
+/* Animation settings for the app logo, considering user's preference for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Applies a spinning animation to the logo */
+  }
+}
+
+/* Styling for the app header */
+.App-header {
+  background-color: #282c34; /* Sets the background color for the app header */
+  min-height: 100vh; /* Sets the minimum height of the header to 100% of the viewport height */
+  display: flex; /* Displays the header as a flex container */
+  flex-direction: column; /* Arranges the items in a column */
+  align-items: center; /* Centers items horizontally within the header */
+  justify-content: center; /* Centers items vertically within the header */
+  font-size: calc(10px + 2vmin); /* Sets the font size relative to the viewport's minimum axis */
+  color: white; /* Sets the text color to white */
+}
+
+/* Styling for the app link */
+.App-link {
+  color: #61dafb; /* Sets the color for the app link */
+}
+
+/* Animation keyframes for the logo spin animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Specifies the initial state of the logo rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Specifies the final state of the logo rotation */
+  }
+}
