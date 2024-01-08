@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;600;700&display=swap');
+
+.selectionContainer {
+    width: 100vw;
+    height: 80vh;
+}
+
+.profileIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.profileIcon:hover {
+    cursor: pointer;
+    /*color: #5688f3;*/
+}
+
+.profileName {
+    border: 2px solid #262522;
+    border-radius: 5%;
+    padding-bottom: 0.5%;
+    padding-right: 1%;
+    padding-left: 1%;
+    transition: 0.3s ease-in-out;
+}
+
+.profileName:hover {
+    cursor: pointer;
+    border: 2px solid #b6b6b6
+}
+
+.versEBcontainer {
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+
+#versEB {
+    display: flex;
+    align-items: center;
+    color: #eeeeee;
+    font-family: 'Khula';
+    font-weight: 300;
+    font-size: 100%;
+    width: 15%;
+    height: 77px;
+    flex-shrink: 0;
+    background: #262522;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.51);
+    border-color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+#versEB:hover {
+    cursor: pointer;
+    background-color:#11110f;
+    border-color: #ffffff;
+    color:#ffffff
+}
+
+.versFBcontainer {
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+
+#versFB {
+    display: flex;
+    align-items: center;
+    color: #eeeeee;
+    font-family: 'Khula';
+    font-weight: 300;
+    font-size: 100%;
+    width: 15%;
+    height: 77px;
+    flex-shrink: 0;
+    background: #262522;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.51);
+    border-color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+#versFB:hover {
+    cursor: pointer;
+    background-color:#11110f;
+    border-color: #ffffff;
+    color:#ffffff
+}
+
+.anaBcontainer {
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+
+#anaB {
+    display: flex;
+    align-items: center;
+    color: #eeeeee;
+    font-family: 'Khula';
+    font-weight: 300;
+    font-size: 100%;
+    width: 15%;
+    height: 77px;
+    flex-shrink: 0;
+    background: #262522;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.51);
+    border-color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+#anaB:hover {
+    cursor: pointer;
+    background-color:#11110f;
+    border-color: #ffffff;
+    color:#ffffff
+}
+
+.home_exitIcons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1%;
+    margin-bottom: 0.5%;
+}
+
+.home_Icon {
+    filter: invert(100%);
+    margin-right: 0.5%;
+    transition: 0.3s ease-in-out;
+}
+
+.home_Icon:hover {
+    filter: invert(50%);
+    cursor: pointer;
+}
+
+.exit_Icon {
+    filter: invert(100%);
+    transition: 0.3s ease-in-out;
+}
+
+.exit_Icon:hover {
+    filter: invert(50%);
+    cursor: pointer;
+}

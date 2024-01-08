@@ -10,7 +10,7 @@ services:
     volumes:
       - backendDatabaseStore:/var/lib/mysql
     ports:
-      - "33060:3306"
+      - "3306:3306"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     restart: always
@@ -34,6 +34,15 @@ services:
       DB_HOST: db
       DB_SCHEMA: backend
     ports:
-      - "8081:80"
+      - "105:105"
+  frontend:
+    image: chess_frontend:latest
+    restart: always
+    depends_on:
+      - backend
+    environment:
+      BACKEND_HOST: backend
+    ports:
+      - "3000:3000"
 volumes:
   backendDatabaseStore:

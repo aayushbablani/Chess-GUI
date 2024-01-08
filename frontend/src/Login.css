@@ -1,0 +1,23 @@
+.login-container {
+  /*
+    background-image: url('chess.com-background.png');
+
+    background-size: contain;
+    background-position: center;
+    */
+    background-color: #262522;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    background-color: white; 
+    box-shadow: black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
